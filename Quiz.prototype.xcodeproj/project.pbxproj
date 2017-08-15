@@ -12,6 +12,12 @@
 		600CCF381F42C59900646757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CCF361F42C59900646757 /* Main.storyboard */; };
 		600CCF3A1F42C59900646757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600CCF391F42C59900646757 /* Assets.xcassets */; };
 		600CCF3D1F42C59900646757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CCF3B1F42C59900646757 /* LaunchScreen.storyboard */; };
+		600CCF461F42C5CE00646757 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600CCF451F42C5CE00646757 /* AudioToolbox.framework */; };
+		600CCF481F42D08800646757 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 600CCF471F42D08800646757 /* question.csv */; };
+		600CCF4A1F42D10F00646757 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CCF491F42D10F00646757 /* QuestionDataManager.swift */; };
+		600CCF4C1F42E3B100646757 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CCF4B1F42E3B100646757 /* StartViewController.swift */; };
+		600CCF4E1F42E79500646757 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CCF4D1F42E79500646757 /* QuestionViewController.swift */; };
+		600CCF501F42ED6D00646757 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CCF4F1F42ED6D00646757 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		600CCF391F42C59900646757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		600CCF3C1F42C59900646757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600CCF3E1F42C59900646757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		600CCF451F42C5CE00646757 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		600CCF471F42D08800646757 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		600CCF491F42D10F00646757 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		600CCF4B1F42E3B100646757 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		600CCF4D1F42E79500646757 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		600CCF4F1F42ED6D00646757 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600CCF461F42C5CE00646757 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				600CCF311F42C59900646757 /* Quiz.prototype */,
 				600CCF301F42C59900646757 /* Products */,
+				600CCF441F42C5CD00646757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +68,27 @@
 		600CCF311F42C59900646757 /* Quiz.prototype */ = {
 			isa = PBXGroup;
 			children = (
+				600CCF471F42D08800646757 /* question.csv */,
 				600CCF321F42C59900646757 /* AppDelegate.swift */,
 				600CCF341F42C59900646757 /* ViewController.swift */,
 				600CCF361F42C59900646757 /* Main.storyboard */,
 				600CCF391F42C59900646757 /* Assets.xcassets */,
 				600CCF3B1F42C59900646757 /* LaunchScreen.storyboard */,
 				600CCF3E1F42C59900646757 /* Info.plist */,
+				600CCF491F42D10F00646757 /* QuestionDataManager.swift */,
+				600CCF4B1F42E3B100646757 /* StartViewController.swift */,
+				600CCF4D1F42E79500646757 /* QuestionViewController.swift */,
+				600CCF4F1F42ED6D00646757 /* ResultViewController.swift */,
 			);
 			path = Quiz.prototype;
+			sourceTree = "<group>";
+		};
+		600CCF441F42C5CD00646757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				600CCF451F42C5CE00646757 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +151,7 @@
 			files = (
 				600CCF3D1F42C59900646757 /* LaunchScreen.storyboard in Resources */,
 				600CCF3A1F42C59900646757 /* Assets.xcassets in Resources */,
+				600CCF481F42D08800646757 /* question.csv in Resources */,
 				600CCF381F42C59900646757 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				600CCF351F42C59900646757 /* ViewController.swift in Sources */,
+				600CCF4E1F42E79500646757 /* QuestionViewController.swift in Sources */,
+				600CCF4C1F42E3B100646757 /* StartViewController.swift in Sources */,
 				600CCF331F42C59900646757 /* AppDelegate.swift in Sources */,
+				600CCF4A1F42D10F00646757 /* QuestionDataManager.swift in Sources */,
+				600CCF501F42ED6D00646757 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +307,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E43KP5ZC7F;
 				INFOPLIST_FILE = Quiz.prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rcsvpg.Quiz-prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,11 +322,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E43KP5ZC7F;
 				INFOPLIST_FILE = Quiz.prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rcsvpg.Quiz-prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
